@@ -26,7 +26,8 @@
 			</div>
 
 			<div class="right_account">
-				
+				<!-- <?php require 'ShopComponents/account/_web_profile.php'; ?> -->
+				<?php require 'ShopComponents/account/_web_address_book.php'; ?>
 			</div>
 
 			<div class="web_clear_content"></div>

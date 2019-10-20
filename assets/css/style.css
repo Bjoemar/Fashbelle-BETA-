@@ -793,14 +793,103 @@ select:focus  {
 }
 
 .left_account {
-	width: 30%;
+	width: 25%;
 	float: left;
 }
 
 .right_account {
-	width: 70%;
+	width: 75%;
 	float: right;
 }
+
+._web_account_info ._web_mid_container {
+	padding-top: 20px;
+}
+
+._web_inner_account {
+	padding-bottom: 30px;
+}
+
+
+._web_inner_account h2{
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+._web_inner_account label{
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+._web_inner_account p{
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+._web_profile {
+	padding: 20px;
+	padding-top: 30px;
+}
+
+._web_profile h2, h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+
+
+.web_address h2, h3 ,h4{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.web_address label , small {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	display: block;
+}
+
+._web_profile label , small {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	display: block;
+}
+
+._profile_col {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom :1px solid #dedede;
+	padding-right: 30%;
+}
+
+._profile_col p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+._profile_col button {
+	border: none;
+    margin-top: 20px;
+    padding: 10px;
+    background: black;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+._address_col {
+	padding-top: 20px;
+}
+
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
