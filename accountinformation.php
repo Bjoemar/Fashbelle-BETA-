@@ -1,4 +1,10 @@
-<?php require_once 'template.php'; ?>
+<?php
+
+ require_once 'template.php';
+ if (!isset($_SESSION['fashbelle_access'])):
+ 	echo "<script>window.location.href = 'index.php'</script>";
+ endif;
+  ?>
 
 <?php 
 	function get_Description_Value(){
@@ -23,15 +29,24 @@
 			
 			<div class="left_account">
 				<?php require 'ShopComponents/account/_web_account_nav.php'; ?>
+
 			</div>
 
 			<div class="right_account">
-				<!-- <?php require 'ShopComponents/account/_web_profile.php'; ?> -->
-				<?php require 'ShopComponents/account/_web_address_book.php'; ?>
-			</div>
+				<div class="profile_col_right" data-id="1" style="display: block;">
+					<?php require 'ShopComponents/account/_web_profile.php'; ?> 
+				</div>
 
-			<div class="web_clear_content"></div>
-		</div>
+				<div class="profile_col_right" data-id="2">
+					<?php require 'ShopComponents/account/_web_address_book.php'; ?>
+				</div>
+
+				<div class="profile_col_right" data-id="4">
+					<?php require 'ShopComponents/account/_web_favorites.php' ?>
+				</div>
+
+			</div>
+		<div class="web_clear_content"></div>
 	</div>
 
 <?php } ?>

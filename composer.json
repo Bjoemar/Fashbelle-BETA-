@@ -1,0 +1,6 @@
+{
+    "require": {
+        "stripe/stripe-php": "^7.11",
+        "cloudinary/cloudinary_php": "^1.15"
+    }
+}

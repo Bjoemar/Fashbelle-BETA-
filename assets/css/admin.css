@@ -1,0 +1,334 @@
+.clear {
+	clear: both;
+	display: block;
+}
+
+.header {
+	width: 100%;
+	/*height: 150px;*/
+	box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.1);
+	background: #fafafa;
+	padding: 20px;
+}
+
+
+.brand {
+	padding: 30px;
+	width: 18%;
+	float: left;
+	height: 100px;
+}
+
+.brand img {
+	width: 180px;
+}
+
+.web_navbar {
+	width: 82%;
+	float: left;
+	height: 100px;
+	padding-top: 20px;
+	position: relative;
+}
+
+.web_navbar button {
+	background: transparent;
+	border:none;
+	font-size: 30px;
+	color: #666666;
+	padding-top: 5px;
+	float: left;
+
+}
+
+.web_navbar input {
+	height: 50px;
+	border-radius: 50px;
+	margin-left: 20px;
+	margin-top: 2px;
+	float: left;
+	padding: 20px;
+	width: 300px;
+	border:none;
+	background: #f1f1f1;
+	color: #666666;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.web_navbar input:focus {
+	outline: none;
+}
+
+.web_navbar button:focus {
+	outline: none;
+}
+
+.web_navbar .searchbutton {
+	height: 50px;
+	border-radius: 50px;
+	margin-top: 2px;
+	padding-top: 0;
+	float: left;
+	padding-right: 20px;
+	border:none;
+	background: #f1f1f1;
+	color: #666666;
+	font-size: 18px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.sidebar {
+	float: left;
+	height: 100vh;
+	background: #161824;
+	color : #666666;
+	width: 18%;
+	padding: 40px 0 0 0 ;
+}
+
+.sidebar ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.sidebar li {
+	padding: 10px 0 10px 30px;
+	cursor: pointer;
+}
+
+.sidebar li:hover {
+
+	color: #007bff;
+	border-left: 3px solid #007bff;
+	font-weight: 600;
+	transition: color 0.5s;
+}
+
+.addProduct {
+	float: left;
+	width: 82%;
+	height: 100vh;
+	overflow-y: scroll;
+	padding: 30px;
+}
+
+.addProduct::-webkit-scrollbar {
+	display: none;
+}
+
+.product_form {
+	padding: 50px;
+	background: #fafafa;
+
+}
+
+.product_form label {
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.product_form .input_about {
+
+	width: 49%;
+	margin: 0.4%;
+	/*margin: 20px;*/
+	height: 50px;
+	border-radius: 5px;
+	border: 1px solid #dddddd;
+	padding: 10px;
+	margin-bottom: 25px;
+	font-weight: 300;
+}
+
+.inputHolder {
+	margin-bottom: 20px;
+}
+
+
+#add_editor {
+	width: 100%;
+}
+
+.product_image {
+	text-align: center;
+}
+
+.image_input {
+	width: 22%;
+	border-radius: 5px;
+	border : 1px solid #ddd;
+	margin: 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+
+.image_input img {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+}
+
+
+.product_image input {
+	display: none;
+}
+
+
+.desc_holder {
+	width: 48%;
+	float: left;
+}
+
+.details_holder {
+	width: 48%;
+	float: right;
+}
+
+.color_picker {
+	width: 100%;
+	position: relative;
+}
+
+.color_picker_container {
+	width: 100%;
+
+}
+
+
+#pick_color {
+	height: 50px;
+	background: #fefefe;
+	box-shadow: 1px 1px 20px #ddd;
+	border: none;
+	font-weight: 600;
+	width: 100%;
+	border-radius: 10px;
+
+}
+
+#pick_color:hover {
+	background: black;
+	color: white;
+}
+
+.item_color {
+	width: 100px;
+	text-align: center;
+	float: left;
+}
+
+.item_color img {
+	height: 50px;
+	width: 50px;
+	border-radius: 100px;
+	box-shadow: 1px 1px 50px #dedede;
+}
+
+.item_color label {
+	display: block;
+}
+
+.color_add_modal {
+	position: absolute;
+	padding: 10px;
+	width: 200px;
+	background: #fefefe;
+	border:1px solid black;
+	border-radius: 5px;
+	top: 0;
+	text-align: center;
+	display: none;
+}
+
+.color_add_modal img {
+	height: 100px;
+	width: 100px;
+	/*width: 50%;*/
+	border-radius: 100px;
+	box-shadow: 1px 1px 50px #dedede;
+	margin-bottom: 20px;
+	cursor: pointer;
+
+}
+
+.color_name {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.color_name:focus {
+	outline: none;
+}
+
+
+#process_product {
+	width: 100%;
+	height: 50px;
+	background: black;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.color_picker ul {
+	padding-left: 0;
+}
+
+.color_picker li {
+	display: inline-block;
+	width: 9%;
+	margin: 5px;
+	text-align: center;
+}
+.item_color {
+	height: 50px;
+	width: 100%;
+	border-radius: 10px;
+	cursor: pointer;
+	border : 1px solid #f3f3f3;
+	box-shadow: 5px 5px 20px #a3a3a3;
+	opacity: 0.5;
+}
+
+.silver {
+	background: #C0C0C0;
+}
+
+.black {
+	background-color: black;
+}
+
+.white {
+	background-color: #f5f5f5;
+}
+
+.gray {
+	background-color: #808080;
+}
+
+.blue {
+	background-color: #2929FF;
+}
+
+.yellow {
+	background-color: #FFFF66;
+}
+
+.brown {
+	background-color: brown;
+}
+
+.pink {
+	background-color: pink;
+}
+
+.maroon {
+	background-color: maroon;
+}
+
+.red {
+	background-color: red;
+}

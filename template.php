@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	
+
 	<meta charset="utf-8">
 	<meta name="description" content="<?php get_Description_Value(); ?>">
 	<meta name="keywords" content="<?php  get_keyword_value(); ?>">
@@ -45,9 +46,15 @@
 	<!-- Google Fonts CDN -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
 
+
+	<!-- Stipre JS -->
+
 	<title><?php  getTitle(); ?></title>
 </head>
+
+
 <body>
+	<?php session_start(); ?>
 	<!-- Navbar -->
 	<div class="web_navigation">
 		
@@ -77,7 +84,80 @@
 		<?php require 'ShopComponents/Footer/_web_footer.php'?>
 	</div>
 
+
+	<div class="_web_quick_view_modal">
+		<div class="quick_view">
+
+			<button id="_modal_close_button">X</button>
+			<div class="_view_thumbnail">
+				<img src="assets/images/loader.gif" class="active_thumb">
+				<img src="assets/images/loader.gif">
+				<img src="assets/images/loader.gif">
+				<img src="assets/images/loader.gif">
+				<button><i class="fas fa-chevron-up"></i></button>
+				<button><i class="fas fa-chevron-down"></i></button>
+			</div>
+			<div class="_product_image">
+				<img src="assets/images/product/shoes/sample1.jpg">
+			</div>
+
+			<div class="_product_info">
+				<h2>Cosmo Animal-Print Calf Hair Slip-On Trainer</h2>
+				<p>STYLE # 43F9CSFP1H</p>
+				<p><strong>&#8369; 13,650.00</strong></p>
+
+				<div class="_web_color column">
+					<div class="_item_color">
+	
+					</div>
+<!-- 
+					<h5>COLOR <span>Black/White</span></h5>
+					<img src="assets/images/colors/colors_1.jpg" class="_item_color_active">
+					<img src="assets/images/colors/colors_2.jpg"> -->
+				</div>
+
+
+				<div class="_web_size column">
+					<h5>SIZE </h5>
+					<button class="sizes" value="XS">US 6 / EU 36</button>
+					<button class="sizes" value="S">US 7 / EU 37</button>
+					<button class="sizes" value="M">US 8 / EU 38.5</button>
+					<button class="sizes" value="L">US 9 / EU 9.5</button>
+					<button class="sizes" value="XL">EU 9.5</button>
+					<button class="sizes" value="XXL">US 10 / EU 41</button>
+				</div>
+
+
+
+				<div class="_web_quantity column">
+					<h5>QUANTITY </h5>
+					<select class="select_web_quantity">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+
+				<button class="add_to_bag">ADD TO BAG</button>
+
+
+				<a href="#">View Full Details</a>
+				<button class="add_to_favorites"><i class="far fa-heart"></i> ADD TO FAVORITE</button>
+
+			</div>
+
+			<div class="web_clear_content"></div>
+		</div>
+	</div>
+
 </body>
+
+
+<script type="text/javascript">
+	console.log(document.cookie)
+</script>
 <script type="text/javascript" src="scripts/script.js"></script>
 </html>
 
