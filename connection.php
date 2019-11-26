@@ -29,7 +29,7 @@
 		
 // OPENSHIFT CONNECTION
 
-$host = getenv("MYSQL_SERVICE_HOST");
+$host = getenv("mysql://mysql:3306/");
 $port = getenv("MYSQL_SERVICE_PORT");
 $user = getenv("user3CQ");
 $password = getenv("3laCQwUPIKxn3IAc");
