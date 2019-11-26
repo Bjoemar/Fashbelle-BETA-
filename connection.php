@@ -29,11 +29,10 @@
 		
 // OPENSHIFT CONNECTION
 
-$host = getenv("mysql://mysql:3306/");
-$port = getenv("MYSQL_SERVICE_PORT");
-$user = getenv("user3CQ");
-$password = getenv("3laCQwUPIKxn3IAc");
-$dbname = getenv("sampledb");
+$host = "mysql://mysql:3306/";
+$user = "user3CQ";
+$password = "3laCQwUPIKxn3IAc";
+$dbname = "sampledb";
 
 $conn = mysqli_connect($host,$user,$password,$dbname);
 
