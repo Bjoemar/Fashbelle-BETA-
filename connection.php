@@ -49,7 +49,7 @@ if ($conn->connect_errno) {
 } else {
     printf("Connected to the database");
 }
-$conn->close();
+// $conn->close();
 
 
  ?>

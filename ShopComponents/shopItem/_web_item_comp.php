@@ -13,7 +13,7 @@
 			$sql = "SELECT * FROM products";	
 		endif;
 		
-		$result = mysqli_query($conn,$sql) or die(mysqli_error($conn));
+		$result = mysqli_query($conn,$sql);
 		$fetch_count = mysqli_num_rows($result);
 		
 	 ?>
