@@ -34,6 +34,7 @@ $port = getenv("MYSQL_SERVICE_PORT");
 $user = getenv("user3CQ");
 $password = getenv("3laCQwUPIKxn3IAc");
 $dbname = getenv("sampledb");
-$conn = mysqli_connect($host,$user,$password,$dbname);
+
+$conn = new mysqli($host,$user,$password,$dbname);
 
  ?>
