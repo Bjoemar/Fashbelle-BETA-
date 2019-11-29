@@ -4,7 +4,7 @@
 	</div>
 
 	<div class="mobile_logo" style="width: 40%;">
-		 <img src="assets/images/icons/Fashbelle_Logo.png">
+		 <a href="index.php"><img src="assets/images/icons/Fashbelle_Logo.png"></a>
 	</div>
 
 	<div class="_web_right_content _inner_right_content" style="width: 30%">
