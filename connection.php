@@ -39,9 +39,9 @@
 
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = getenv("databaseuser");
-$dbpwd = getenv("databasepassword");
-$dbname = getenv("databasename");
+$dbuser = getenv("MYSQL_USER");
+$dbpwd = getenv("MYSQL_PASSWORD");
+$dbname = getenv("MYSQL_DATABASE");
 $conn = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname);
 if ($conn->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
