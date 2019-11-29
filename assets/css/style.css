@@ -1335,7 +1335,7 @@ select:focus  {
 
 
 	._item {
-		width: 49.5%;
+		width: 100%;
 		display: inline-block;
 		height: 550px;
 		padding: 10px;
