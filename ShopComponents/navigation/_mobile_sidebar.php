@@ -12,7 +12,7 @@
 	</ul>
 
 	<ul class="credentials_form">
-		<a href="createAccount.php" class="_web_navs"><li>로그인</li></a>
-		<a href="createAccount.php" class="_web_navs"><li>회원가입</li></a>
+		<a href="createAccount.php" class="_web_navs" style="color: black; text-decoration-style: none;"><li>로그인</li></a>
+		<a href="createAccount.php" class="_web_navs" style="color: black; text-decoration-style: none;"><li>회원가입</li></a>
 	</ul>
 </div>
