@@ -23,7 +23,7 @@
 		<label><strong>지불 옵션</strong></label>
 		<br>
 		<img src="assets/images/icons/Visa.svg">
-		<img src="assets/images/icons/Paypal.svg">
+		<img src="assets/images/icons/PayPal.svg">
 		<img src="assets/images/icons/MasterCard.svg">
 	</div>
 </div>
