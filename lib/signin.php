@@ -37,8 +37,8 @@
 		$customer_id = $mac;
 
 
-		$get_ghost_item = "SELECT * FROM cart_item WHERE custumer_id = '$mac'";
-		$g_item = mysqli_query($conn,$get_ghost_item);
+		$get_ghost_item = "SELECT * FROM cart_item WHERE customer_id = '$mac'";
+		$g_item = mysqli_query($conn,$get_ghost_item) or die(mysqli_error($conn));
 		$g_item = mysqli_fetch_assoc($g_item);
 		$owner_id = $data['credentials_id'];
 		$owned_ghost_item = "UPDATE cart_item SET customer_id = '$owner_id'";

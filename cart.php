@@ -36,6 +36,8 @@
 
 				$client_id = $_SESSION['fashbelle_access']; 
 			}
+
+			
 			$get_cart_item = "SELECT * FROM cart_item WHERE customer_id = '$client_id'";
 			$result = mysqli_query($conn,$get_cart_item);
 			$cart_count = mysqli_num_rows($result);

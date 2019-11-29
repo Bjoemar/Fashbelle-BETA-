@@ -23,7 +23,7 @@
 	<div class="_web_mid_container parent_payment">
 		<div class="_web_left_content _web_mid_container item_to_pay">
 
-			<h4 class="mt-4 mb-5">CART ITEM</h4>		
+			<h4 class="mt-4 mb-5">장바구니 목록</h4>		
 			<?php require 'connection.php';
 				if (!isset($_SESSION['fashbelle_access'])) {
 					ob_start(); // Turn on output buffering
@@ -88,7 +88,7 @@
 			 			        	<h5 class="card-title"><?php echo $item_n_cart[$i]['title']; ?></h5>
 			 			        	<p class="card-text">COLOR : <?php echo $item_n_cart[$i]['color']; ?></p>
 			 			        		<p class="card-text">Quantity : <?php echo $item_n_cart[$i]['quantity']; ?></p>
-			 			        	<p class="card-text"><small class="text-muted">&#8369; <?php echo $item_n_cart[$i]['price']; ?></small></p>
+			 			        	<p class="card-text"><small class="text-muted"><?php echo $item_n_cart[$i]['price']; ?> 원</small></p>
 			 			      	</div>
 			 			    </div>
 			 			</div>
@@ -98,7 +98,7 @@
 
 
 			<hr>
-			<h3>TOTAL : &#8369; <strong><?php echo $total; ?></strong></h3>
+			<h3>TOTAL : <strong><?php echo $total; ?> 원</strong></h3>
 
 
 
@@ -121,27 +121,27 @@
 										<div class="_web_register" style="padding: 20px;">				
 											<ul>
 												<li>
-													<h4><strong>PAYMENT METHOD</strong></h4>
+													<h4><strong>결제 방법</strong></h4>
 												</li>
 
 
 												<li>
 													<select name="payment_type">
-														<option value="credit_card_payment">CREDIT / DEBIT CARD PAYMENTS</option>
-														<option value="paypal_payment">PAYPAL</option>
-														<option value="cod_payment">CASH ON DELIVERY</option>
+														<option value="credit_card_payment">신용카드</option>
+														<option value="paypal_payment">페이팔</option>
+														<option value="cod_payment">현금</option>
 													</select>
 												</li>
 
 
 												<li>
-													<label>CUSTOMER EMAIL *</label>
+													<label>이메일 *</label>
 													<input type="text" name="email" required>
 												</li>
 
 
 												<li>
-													<label>Credit Card Information</label>
+													<label>신용카드 정보</label>
 													<div id="card-element">
 													  <!-- A Stripe Element will be inserted here. -->
 													</div>
@@ -150,7 +150,7 @@
 
 												<li>
 													<hr>
-													<h4><strong>Recipient</strong></h4>
+													<h4><strong>받는 사람</strong></h4>
 												</li>
 
 												<li>
@@ -165,29 +165,29 @@
 												</li>
 
 												<li>
-													<label>FIRST NAME*</label>
+													<label>이름*</label>
 													<input type="text" name="address_rep_name" required value="<?php if($address_data){ echo $address_data['rep_name']; } ?>">
 												</li>
 
 												<li>
-													<label>LAST NAME*</label>
+													<label>성*</label>
 													<input type="text" name="address_rep_last_name" required value="<?php if($address_data){ echo $address_data['rep_last'];} ?>">
 												</li>
 
 
 												<li>
-													<label>PHONE NUMBER</label>
+													<label>연락처</label>
 													<input type="text" name="address_rep_phone_number" required value="<?php if($address_data){ echo  $address_data['rep_number'];} ?>">
 												</li>
 
 												<li>
 													<hr>
-													<h4><strong>SHIPPING ADDRESS</strong></h4>
+													<h4><strong>배송 주소</strong></h4>
 												</li>
 
 
 												<li>
-													<label>COUNTRY</label>
+													<label>국가</label>
 													<select name="address_country">
 														<?php if($address_data){ echo  "<option value=".$address_data['country'].">".$address_data['country']."</option>";} ?>
 													    <option value="Afghanistan">Afghanistan</option>
@@ -438,15 +438,15 @@
 												</li>
 
 												<li>
-													<label>ADDRESS LINE 1*</label>
+													<label>주소 1 *</label>
 													<input type="text" name="address_line_1" required value="<?php if($address_data){ echo  $address_data['address_line_1'];} ?>">
 												</li>
 
 												<li>
-													<label>ADDRESS LINE 2*</label>
+													<label>주소 2*</label>
 													<input type="text" name="address_line_2" required value="<?php if($address_data){ echo  $address_data['address_line_2'];} ?>">
 												</li>
-
+<!-- 
 												<li>
 													<label>TOWN OR CITY*</label>
 													<input type="text" name="address_town" required value="<?php if($address_data){ echo  $address_data['town'];} ?>">
@@ -461,12 +461,12 @@
 													<label>ZIP / POSTCODE</label>
 													<input type="text" name="address_zipcode" required value="<?php if($address_data){ echo  $address_data['zip_code'];} ?>">
 												</li>
-
+ -->
 
 
 											</ul>
 
-											<button type="submit">PROCCESS ORDER</button>
+											<button type="submit">주문하기</button>
 										</div>
 								</form>	
 							</div> <!-- End Billinf address -->

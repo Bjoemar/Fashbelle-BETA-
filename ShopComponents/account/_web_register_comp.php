@@ -1,11 +1,11 @@
 <form action="lib/customer_registration.php" method="POST" id="register_form">
 	<div class="_web_register">
-		<h2>CREATE YOUR ACCOUNT</h2>
+		<h2>계정 만들기</h2>
 		<div class="_web_reg_form">
-			<small id="error_message">* Required</small>
+			<small id="error_message">* 필수</small>
 			<ul>
 				<li>
-					<label>COUNTRY *</label>
+					<label>국가 *</label>
 					<select id="country" name="customer_country">
 						<option value="">SELECT COUNTRY</option>
 					    <option value="Afghanistan">Afghanistan</option>
@@ -256,42 +256,42 @@
 				</li>
 
 				<li>
-					<label>EMAIL ADDRESS *</label>
+					<label>이메일 주소 *</label>
 					<input type="text" name="email">
 				</li>
 
 				<li>
-					<label>CONFIRM EMAIL ADDRESS *</label>
+					<label>이메일 주소 확인 *</label>
 					<input type="text" name="confirm_email">
 				</li>
 
 
 				<li>
-					<label>FIRST NAME *</label>
+					<label>이름 *</label>
 					<input type="text" name="firstname">
 				</li>
 
 
 				<li>
-					<label>LAST NAME *</label>
+					<label>성 *</label>
 					<input type="text" name="lastname">
 				</li>
 
 
 				<li>
-					<label>PHONE NUMBER</label>
+					<label>연락처</label>
 					<input type="text" name="phone_number">
 				</li>
 
 				<li>
-					<label>ZIP/POSTAL CODE</label>
+					<label>주소</label>
 					<br>
 					<input type="text" name="postalcode" style="width: 48%;">
 				</li>
 
 
 				<li>
-					<label>BIRTHDATE</label>
+					<label>생일</label>
 					<br>
 					<div class="_web_left_content">
 						<select name="reg_month" id="reg_month">
@@ -323,18 +323,18 @@
 				<p>Your password should contain 6-20 case sensitive characters, at least one numeral, at least one alphabet,special characters allowed .</p>
 
 				<li>
-					<label>PASSWORD *</label>
+					<label>비밀번호 *</label>
 					<input type="password" name="password">
 				</li>
 
 				<li>
-					<label>CONFIRM PASSWORD *</label>
+					<label>비밀번호 확인 *</label>
 					<input type="password" name="confirm_password">
 				</li>
 
 				<div class="_web_terms_condition">
 					<input type="checkbox" class="req_checkbox">
-					<p>By checking this box and clicking "Register" below, I acknowledge that I have read and agree to the Terms & Conditions and Privacy Policy .</p>
+					<p>이 확인란을 선택하고 아래의 "등록"을 클릭하면 이용 약관 및 개인 정보 보호 정책을 읽고 동의 함을 인정합니다..</p>
 					<div class="web_clear_content"></div>
 				</div>
 
@@ -342,7 +342,7 @@
 
 				<div class="_web_terms_condition">
 					<input type="checkbox" class="req_checkbox">
-					<p>Yes, sign me up! By checking this box, I agree I want to receive news, offers, style tips and other promotional materials from and about Michael Kors, including by email, phone and mail to the contact information I am submitting. I consent to Michael Kors, its affiliates and service providers processing my personal data for these purposes and as described in the privacy policy. I understand that I can withdraw my consent at any time.</p>
+					<p>예, 가입하세요! 이 확인란을 선택하면 Michael Kors에 관한 뉴스, 제안, 스타일 팁 및 기타 홍보 자료를 전자 메일, 전화 및 우편으로 제출하는 연락처 정보로 받고 싶습니다. 본인은 개인 정보 취급 방침에 설명 된대로 이러한 목적으로 개인 정보를 처리하는 Michael Kors, 그 계열사 및 서비스 제공 업체에 동의합니다. 본인은 언제든지 동의를 철회 할 수 있음을 이해합니다..</p>
 					<div class="web_clear_content"></div>
 				</div>
 
@@ -350,7 +350,7 @@
 				<!-- End of registraion form -->
 			</ul>
 
-			<button id="register" type="button">REGISTER</button>
+			<button id="register" type="button">회원가입</button>
 		</div>
 	</div>
 		

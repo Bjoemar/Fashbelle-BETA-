@@ -5,16 +5,16 @@
 			<div class="_web_left_content m_web_full_content">
 				<h2>
 					<?php if ($cart_count > 1): ?>
-						YOUR BAG (<?php echo $cart_count; ?>)
+						나의 가방 (<?php echo $cart_count; ?>)
 					<?php else: ?>
-						YOUR BAG IS EMPTY
+						당신의 가방은 비어 있습니다
 					<?php endif; ?>		
 				</h2>
-				<small><a href="shop.php" style="color: black;">Continue Shopping</a></small>
+				<small><a href="shop.php" style="color: black;">계속 쇼핑하기</a></small>
 			</div>
 
 			<div class="_web_right_content _inner_right_content m_web_full_content">
-				<h2>SUBTOTAL &#8369;<?php echo $total ?></h2>
+				<h2>합계 <?php echo $total ?>원</h2>
 			</div>
 
 			<div class="web_clear_content"></div>
@@ -24,16 +24,16 @@
 		<div class="_cart_item">
 			<div class="header_cart">
 				<div class="_prod_desc">
-					<label>Product Description</label>
+					<label>제품 설명</label>
 				</div>
 				<div class="_prod_price">
-					<label>Price</label>
+					<label>가격</label>
 				</div>
 				<div class="_prod_quantity">
-					<label>Quantity</label>
+					<label>수량</label>
 				</div>
 				<div class="_prod_subtotal">
-					<label><strong>Subtotal</strong></label>
+					<label><strong>합계</strong></label>
 				</div>
 				<div class="web_clear_content"></div>
 
@@ -77,7 +77,7 @@
 									</div>
 
 									<div class="_web_right_content _inner_right_content">
-										<label class="_cart_text">&#8369; <?php echo $item_information['price'] ?></label>
+										<label class="_cart_text"> <?php echo $item_information['price'] ?> 원</label>
 									</div>
 									
 								</div>
@@ -95,11 +95,11 @@
 								</div>
 								<div class="_prod_subtotal">
 									<div class="_web_left_content _inner_left_content">
-										<label class="_cart_text">Sub Total</label>
+										<!-- <label class="_cart_text">Sub Total</label> -->
 									</div>
 
 									<div class="_web_right_content _inner_right_content">
-										<label class="_cart_text"><strong>&#8369;44,250.00</strong></label>
+										<!-- <label class="_cart_text"><strong>&#8369;44,250.00</strong></label> -->
 									</div>
 									
 									
@@ -114,7 +114,7 @@
 					</div>
 					<!-- End prod description -->
 					<div class="_prod_price">
-						<label class="_cart_text">&#8369; <?php echo $item_information['price'] ?></label>
+						<label class="_cart_text"> <?php echo $item_information['price'] ?> 원</label>
 					</div>
 					<div class="_prod_quantity">
 						<label class="_cart_text">
@@ -122,7 +122,7 @@
 						</label>
 					</div>
 					<div class="_prod_subtotal">
-						<label class="_cart_text"><strong>&#8369; <?php echo $item_information['subtotal'] ?></strong></label>
+						<label class="_cart_text"><strong> <?php echo $item_information['subtotal'] ?></strong> 원</label>
 					</div>
 
 					<div class="_option_btn m_option_btn">
@@ -149,33 +149,33 @@
 	<div class="_cart_right">
 		<div class="_web_order_summary">
 			<div class="_web_inner_os">
-				<h2>ORDER SUMMARY</h2>
+				<h2>주문 목록</h2>
 				<div class="_web_left_content _inner_left_content">
-					<label>SUBTOTAL</label>
+					<label>합계</label>
 				</div>
 				<div class="_web_right_content _inner_right_content">
-					 <label>&#8369;<?php echo $total; ?></label>
+					 <label><?php echo $total; ?> 원</label>
 				</div>
 				<div class="_web_left_content _inner_left_content">
-					<label>Shipping</label>
+					<label>배송</label>
 				</div>
 				<div class="_web_right_content _inner_right_content">
-					<label>FROM FREE</label>
+					<label>무료</label>
 				</div>
 
 				<div class="web_clear_content"></div>
 				<hr>
 				<div class="_web_left_content _inner_left_content">
-					<label><strong>TOTAL</strong><br>(Before Shipping)</label>
+					<label><strong>합계</strong></label>
 				</div>
 				<div class="_web_right_content _inner_right_content">
-					<label>&#8369;<?php echo $total; ?></label>
+					<label><?php echo $total; ?> 원</label>
 				</div>
 				<div class="web_clear_content"></div>
 
 			</div>
 
-			<a href="checkout.php"><button id="buy_d_items" data-id="<?php echo $_SESSION['fashbelle_access']; ?>" >CHECKOUT</button></a>
+			<a href="checkout.php"><button id="buy_d_items" data-id="<?php echo $_SESSION['fashbelle_access']; ?>" >주문하기</button></a>
 			<!-- end web inner order summary -->
 
 		</div>

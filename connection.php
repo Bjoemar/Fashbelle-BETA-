@@ -7,11 +7,11 @@
 	// $conn = mysqli_connect($host,$user,$password,$dbname);
 
 
-	// $host = "localhost";
-	// $user = 'root';
-	// $password = '';
-	// $dbname = 'fashbelle';
-	// $conn = mysqli_connect($host,$user,$password,$dbname);
+	$host = "localhost";
+	$user = 'root';
+	$password = '';
+	$dbname = 'fashbelle';
+	$conn = mysqli_connect($host,$user,$password,$dbname);
 		
 
 	// $host = "localhost";
@@ -37,16 +37,16 @@
 // $conn = mysqli_connect($host,$user,$password,$dbname);
 
 
-$dbhost = getenv("MYSQL_SERVICE_HOST");
-$dbport = getenv("MYSQL_SERVICE_PORT");
-$dbuser = getenv("MYSQL_USER");
-$dbpwd = getenv("MYSQL_PASSWORD");
-$dbname = getenv("MYSQL_DATABASE");
-$conn = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname);
-if ($conn->connect_errno) {
-    printf("Connect failed: %s\n", $mysqli->connect_error);
-    exit();
-}
+// $dbhost = getenv("MYSQL_SERVICE_HOST");
+// $dbport = getenv("MYSQL_SERVICE_PORT");
+// $dbuser = getenv("MYSQL_USER");
+// $dbpwd = getenv("MYSQL_PASSWORD");
+// $dbname = getenv("MYSQL_DATABASE");
+// $conn = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname);
+// if ($conn->connect_errno) {
+//     printf("Connect failed: %s\n", $mysqli->connect_error);
+//     exit();
+// }
 // $conn->close();
 
 

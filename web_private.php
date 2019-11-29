@@ -53,9 +53,10 @@
 	<title>PRIVATE AREA</title>
 </head>
 <body>
+
 	<?php require 'ShopComponents/private/header.php'; ?>
-	<?php require 'ShopComponents/private/sidebar.php' ?>
-	<?php require 'ShopComponents/private/admin.php' ?>	
+	<?php require 'ShopComponents/private/sidebar.php'; ?>
+	<?php require 'ShopComponents/private/admin.php'; ?>	
 
 </body>
 <script type="text/javascript" src="scripts/admin_script.js"></script>

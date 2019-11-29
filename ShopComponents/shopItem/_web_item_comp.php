@@ -1,6 +1,6 @@
 
  <div class="_web_item">
-	<h4>VIEL ALL HANDBAGS</h4>
+	<!-- <h4>VIEL ALL HANDBAGS</h4> -->
 
 	<?php 
 		// Get Product in the products table;
@@ -32,7 +32,7 @@
 	</div>
 
 	<div class="_web_right_content">
-		<label><?php echo $fetch_count; ?> Products</label>
+		<label><?php echo $fetch_count; ?> 제품</label>
 	</div>
 	<div class="web_clear_content"></div>
 
@@ -76,7 +76,7 @@
 								<p>Cece Extra-Small Bearded Logo Crossbody Bag</p>
 							</div>
 							<div class="_item_price">
-								<p>&#8369; <?php echo $row['product_price']; ?></p>
+								<p><?php echo $row['product_price']; ?> 원</p>
 							</div>
 							<div class="_item_color">
 								<?php 
@@ -99,7 +99,7 @@
 				<?php else: ?>
 					<div class="empty" style="height: 500px;">
 			
-						<h2 style="font-weight: 300;">NO PRODUCT AVAILABLE</h2>
+						<h2 style="font-weight: 300;">사용 가능한 제품 없음</h2>
 					</div>
 					 <hr>
 			<?php endif; ?>
