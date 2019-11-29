@@ -46,8 +46,6 @@ $conn = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname);
 if ($conn->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
     exit();
-} else {
-    printf("Connected to the database");
 }
 // $conn->close();
 
