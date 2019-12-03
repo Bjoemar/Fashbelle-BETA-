@@ -43,10 +43,10 @@ $dbuser = getenv("MYSQL_USER");
 $dbpwd = getenv("MYSQL_PASSWORD");
 $dbname = getenv("MYSQL_DATABASE");
 $conn = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname);
-if ($conn->connect_errno) {
-    printf("Connect failed: %s\n", $mysqli->connect_error);
-    exit();
-}
+// if ($conn->connect_errno) {
+//     printf("Connect failed: %s\n", $mysqli->connect_error);
+//     exit();
+// }
 // $conn->close();
 
 
