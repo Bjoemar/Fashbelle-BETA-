@@ -4,6 +4,7 @@
 	require_once('../vendor/cloudinary/cloudinary_php/src/Uploader.php' );
 	require_once('../vendor/cloudinary/cloudinary_php/src/Helpers.php' );
 	require_once('../vendor/cloudinary/cloudinary_php/src/Api.php' );
+	require_once('../vendor/cloudinary/cloudinary_php/src/Error.php' );
 	require '../connection.php';
 
 	\Cloudinary::config(array(
