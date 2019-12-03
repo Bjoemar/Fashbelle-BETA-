@@ -13,14 +13,14 @@
 	));
 	
 	 $product_name = $_POST['product_title'];
-	 // $product_subtitle = $_POST['product_subtitle'];
+	 $product_subtitle = $_POST['product_subtitle'];
 	 $product_price = $_POST['product_price'];
 	 $product_category = $_POST['product_category'];
 	 $product_description = $_POST['product_description'];
 	 $product_details = $_POST['product_details'];
 
 	 // Insert The info of the product in product table
-	 $insertProduct = "INSERT INTO products(product_name,product_price,product_category,product_description,product_details) VALUES('$product_name','$product_price','$product_category','#product_description','$product_details')";
+	$insertProduct = "INSERT INTO products(product_name,product_price,product_category,product_description,product_details, sub_title) VALUES('$product_name','$product_price','$product_category','$product_description','$product_details','$product_subtitle')";
 	 mysqli_query($conn,$insertProduct) or die(mysqli_error($conn));
 	 $product_id = $conn->insert_id;
 
