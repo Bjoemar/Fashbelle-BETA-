@@ -73,7 +73,7 @@
 							</div>
 							<div class="_item_description">
 								<h5><?php echo $row['product_name']; ?></h5>
-								<p>Cece Extra-Small Bearded Logo Crossbody Bag</p>
+								<p><?php echo $row['sub_title']; ?></p>
 							</div>
 							<div class="_item_price">
 								<p><?php echo $row['product_price']; ?> 원</p>
