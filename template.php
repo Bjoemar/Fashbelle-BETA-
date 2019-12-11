@@ -104,7 +104,7 @@
 			<div class="_product_info">
 				<h2>Cosmo Animal-Print Calf Hair Slip-On Trainer</h2>
 				<p>STYLE # 43F9CSFP1H</p>
-				<p><strong>&#8369; 13,650.00</strong></p>
+				<p><strong></strong></p>
 
 				<div class="_web_color column">
 					<div class="_item_color">

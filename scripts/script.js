@@ -205,7 +205,7 @@ $(document).ready(function(){
 				$('.quick_view').find('._product_image img').attr('src',newdata['image'][0]);
 				$('.quick_view').find('._product_info h2').html(newdata['product_name']);
 				var str = newdata['product_price'];
-				var newStr = str.substring(0, str.length - 3);
+				var newStr = str.substring(0, str.length - 3);				
 				$('.quick_view').find('._product_info p strong').html(newStr+" 원");
 				$('.quick_view .add_to_bag').val(product_id);
 				$('.quick_view ._web_color ._item_color').html('');
