@@ -162,7 +162,7 @@ $(document).ready(function(){
 		$('._web_nav_overlay_login').css({
 			'transform' : 'scale(0)',
 			'transition' : '0.1s',
-		})
+		});
 
 		account_overlay = false;
 	});
@@ -178,6 +178,7 @@ $(document).ready(function(){
 			data : {'product_id' : product_id},
 			success:function(data){
 				var newdata = JSON.parse(data);
+
 				if (newdata['image'][0]) {
 					$('.quick_view').find('._view_thumbnail img').first().attr('src',newdata['image'][0]);
 				} else{
@@ -237,11 +238,9 @@ $(document).ready(function(){
 
 
 	$('._view_thumbnail img').click(function(){
-
 		$('._view_thumbnail img').removeClass('active_thumb');
 		$(this).addClass('active_thumb')	
 		$('.quick_view').find('._product_image img').attr('src',$(this).attr('src'));
-
 	});
 
 	$('#register').click(function(){
@@ -379,6 +378,65 @@ $(document).ready(function(){
 		item_modal_arr['quantity'] = $(this).val();
 	})
 
+
+
+	var modal_active = 0;
+
+	$('#modal_up_thumb').click(function(){
+
+		if (modal_active == 0) {
+
+			modal_active = 3;
+
+		} else if (modal_active == 1) {
+
+			modal_active = 0;
+
+		} else if (modal_active == 2) {
+
+			modal_active = 1;
+
+		} else if (modal_active == 3) {
+
+			modal_active = 2;
+		}
+
+		$('._view_thumbnail img').removeClass('active_thumb');
+
+		$('._view_thumbnail').find('img').eq(modal_active).addClass('active_thumb');
+		
+		var newSrc = $('._view_thumbnail').find('img').eq(modal_active).attr('src');
+
+		$('._product_image img').attr('src',newSrc);
+	});
+
+	$('#modal_down_thumb').click(function(){
+
+		if (modal_active == 0) {
+
+			modal_active = 1;
+
+		} else if (modal_active == 1) {
+
+			modal_active = 2;
+
+		} else if (modal_active == 2) {
+
+			modal_active = 3;
+
+		} else if (modal_active == 3) {
+
+			modal_active = 0;
+		}
+
+		$('._view_thumbnail img').removeClass('active_thumb');
+
+		$('._view_thumbnail').find('img').eq(modal_active).addClass('active_thumb');
+
+		var newSrc = $('._view_thumbnail').find('img').eq(modal_active).attr('src');
+
+		$('._product_image img').attr('src',newSrc);
+	});
 
 
 

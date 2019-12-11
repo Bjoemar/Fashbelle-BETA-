@@ -94,8 +94,8 @@
 				<img src="assets/images/loader.gif">
 				<img src="assets/images/loader.gif">
 				<img src="assets/images/loader.gif">
-				<button><i class="fas fa-chevron-up"></i></button>
-				<button><i class="fas fa-chevron-down"></i></button>
+				<button id="modal_up_thumb"><i class="fas fa-chevron-up"></i></button>
+				<button id="modal_down_thumb"><i class="fas fa-chevron-down"></i></button>
 			</div>
 			<div class="_product_image">
 				<img src="assets/images/product/shoes/sample1.jpg">
