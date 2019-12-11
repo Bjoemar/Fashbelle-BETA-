@@ -4,6 +4,7 @@ var item_modal_arr = {
 	'quantity' : 0,
 };
 
+var modal_active = 0;
 
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
@@ -230,6 +231,9 @@ $(document).ready(function(){
 
 
 	$('#_modal_close_button').click(function(){
+
+		modal_active = 0;
+		
 		$('._web_quick_view_modal').hide();
 		$('body').css({
 			'overflow' : 'scroll',
@@ -380,7 +384,7 @@ $(document).ready(function(){
 
 
 
-	var modal_active = 0;
+	
 
 	$('#modal_up_thumb').click(function(){
 
@@ -404,7 +408,7 @@ $(document).ready(function(){
 		$('._view_thumbnail img').removeClass('active_thumb');
 
 		$('._view_thumbnail').find('img').eq(modal_active).addClass('active_thumb');
-		
+
 		var newSrc = $('._view_thumbnail').find('img').eq(modal_active).attr('src');
 
 		$('._product_image img').attr('src',newSrc);
