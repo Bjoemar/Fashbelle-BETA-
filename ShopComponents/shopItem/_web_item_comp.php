@@ -69,7 +69,7 @@
 									<img src="assets/images/no_image.png">	
 								<?php endif; ?>
 								
-								<button class="_open_quick_view" value="<?php echo $p_id ?>">QUICK VIEW</button>
+								<button class="_open_quick_view" value="<?php echo $p_id ?>">자세히 보기</button>
 							</div>
 							<div class="_item_description">
 								<h5><?php echo $row['product_name']; ?></h5>
