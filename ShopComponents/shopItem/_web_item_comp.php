@@ -76,7 +76,7 @@
 								<p><?php echo $row['sub_title']; ?></p>
 							</div>
 							<div class="_item_price">
-								<p><?php echo $row['product_price']; ?> 원</p>
+								<p><?php echo substr($row['product_price'], 0, -3); ?> 원</p>
 							</div>
 							<div class="_item_color">
 								<?php 

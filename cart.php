@@ -31,9 +31,7 @@
 				$pmac = strpos($mycom, $find_word); // Find the position of Physical text in array
 				$mac=substr($mycom,($pmac+36),17); // Get Physical Address
 				$client_id = $mac;
-				
 			} else {
-
 				$client_id = $_SESSION['fashbelle_access']; 
 			}
 
@@ -77,9 +75,9 @@
 
 		<div class="_cart_left payment_info">
 			<?php require 'ShopComponents/bags/_bag_information_comp.php'; ?>
-			<dib class="web_clear_content"></dib>
+			<div class="web_clear_content"></div>
 		</div>
-		<dib class="web_clear_content"></dib>
+		<div class="web_clear_content"></div>
 	</div>
 
 <?php } ?>

@@ -8,7 +8,6 @@
 		<a href="shop.php?category=5" class="_web_navs"><li>Shoes</li></a>
 		<a href="shop.php?category=6" class="_web_navs"><li>Watches</li></a>
 		<a href="shop.php?category=7" class="_web_navs"><li>Accessories</li></a>
-		<a href="shop.php?category=8" class="_web_navs"><li>Gifts</li></a>
 	</ul>
 
 	<ul class="credentials_form">
