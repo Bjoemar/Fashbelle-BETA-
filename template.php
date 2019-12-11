@@ -98,7 +98,7 @@
 				<button id="modal_down_thumb"><i class="fas fa-chevron-down"></i></button>
 			</div>
 			<div class="_product_image">
-				<img src="assets/images/product/shoes/sample1.jpg">
+				<img src="assets/images/loader.gif">
 			</div>
 
 			<div class="_product_info">
