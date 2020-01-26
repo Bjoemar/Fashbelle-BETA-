@@ -5,6 +5,7 @@
 
 	<meta charset="utf-8">
 	<meta name="description" content="<?php get_Description_Value(); ?>">
+	<META NAME="robots" CONTENT="noindex,nofollow">
 	<meta name="keywords" content="<?php  get_keyword_value(); ?>">
 	<meta name="author" content="FASHBELLE">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
