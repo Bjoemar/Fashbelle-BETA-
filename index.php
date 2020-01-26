@@ -3,16 +3,16 @@
 <?php 
 	
 	function get_Description_Value(){
-		echo "TEST";
+		echo "HOME";
 	}
 
 	function get_keyword_value(){
-		echo "TEST";
+		echo "HOME";
 		
 	}
 
 	function getTitle(){
-		echo "Fashbelle PH";
+		echo "PRIMIERE KOR";
 	}
  ?>
 

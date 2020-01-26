@@ -18,7 +18,7 @@
 	}
 
 	function getTitle(){
-		echo "Fashbelle PH";
+		echo "PRIMIERE KOR";
 	}
  ?>
 
