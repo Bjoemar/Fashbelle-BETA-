@@ -32,12 +32,11 @@
 
 
 </style>
-
+<!-- 
 <div class="_web_footer">
 	<div class="_web_mid_container">
 
 		<div class="_web_left_content m_web_full_content">
-			<!-- <h2><i class="fas fa-map-marker-alt"></i> Locate Office</h2> -->
 
 			<div class="_footer_get_email">
 				<h3>이메일로 회원가입</h3>
@@ -105,3 +104,4 @@
 	</div>
 </div>
 
+ -->
